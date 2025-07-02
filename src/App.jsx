@@ -1,5 +1,6 @@
 
 import './App.css'
+import CustomHookForm from './components/CustomHookForm/CustomHookForm'
 import RefForm from './components/RefForm/RefForm'
 import SimpleForm from './components/SimpleForm/SimpleForm'
 import StateFulForm from './components/StateFulForm/StateFulForm'
@@ -15,9 +16,12 @@ function App() {
       {/* <h2 className='text-2xl font-bold mt-10'>Stateful Form</h2> */}
       {/* <StateFulForm></StateFulForm> */}
 
-      <h2 className='text-2xl font-bold mt-10'>Reff Form</h2>
-      <RefForm></RefForm>
+      {/* <h2 className='text-2xl font-bold mt-10'>Reff Form</h2> */}
+      {/* <RefForm></RefForm> */}
      
+    <h2 className='text-2xl font-bold mt-10'>Custom Hook Form</h2>
+    <CustomHookForm></CustomHookForm>
+
     </div>
   )
 }

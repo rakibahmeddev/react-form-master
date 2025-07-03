@@ -1,6 +1,7 @@
 
 import './App.css'
 import CustomHookForm from './components/CustomHookForm/CustomHookForm'
+import Grandpa from './components/Grandpa/Grandpa'
 import RefForm from './components/RefForm/RefForm'
 import ReusableForm from './components/ReusableForm/ReusableForm'
 import SimpleForm from './components/SimpleForm/SimpleForm'
@@ -9,16 +10,16 @@ import StateFulForm from './components/StateFulForm/StateFulForm'
 function App() {
 
 
-    const handleSignUpSubmit = (data) => {
-      console.log('Sign Up Data:', data);
-    }
-    const handleProfileUpdateSubmit = (data) => {
-      console.log('Profile Update Data:', data);
-    }
+    // const handleSignUpSubmit = (data) => {
+    //   console.log('Sign Up Data:', data);
+    // }
+    // const handleProfileUpdateSubmit = (data) => {
+    //   console.log('Profile Update Data:', data);
+    // }
 
 
   return (
-    <div className='flex flex-col items-center bg-gray-100'>
+    <div className='max-w-full w-full flex flex-col items-center'>
       <h1 className='text-4xl font-bold my-10'>Welcome to React Form Learning</h1>
       {/* <SimpleForm></SimpleForm> */}
 
@@ -32,7 +33,7 @@ function App() {
     {/* <CustomHookForm></CustomHookForm> */}
 
 
-    <ReusableForm 
+    {/* <ReusableForm 
     formTitle="Singn Up Form"
      submitBtnText="Sign Up" handleOnSubmit={handleSignUpSubmit}>
       <p className='text-center'>Please sign up from react default children props</p>
@@ -42,7 +43,10 @@ function App() {
     formTitle="Profile Update Form"
      submitBtnText='Update' handleOnSubmit={handleProfileUpdateSubmit}>
       <p className="text-center">Keep your profile always updated</p>
-     </ReusableForm>
+     </ReusableForm> */}
+
+
+     <Grandpa></Grandpa>
 
 
 

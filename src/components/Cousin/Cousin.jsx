@@ -1,5 +1,6 @@
 import React from 'react';
 import Special from '../Special/Special';
+import Friend from '../Friend/Friend';
 
 const Cousin = ({name, asset}) => {
     return (
@@ -8,6 +9,7 @@ const Cousin = ({name, asset}) => {
               <h3>{name}</h3>
               <div>
                 {asset ? <Special asset={asset}></Special> : ''}
+                {name == 'Rubaiya' ? <Friend></Friend> : '' }
               </div>
         </div>
     );

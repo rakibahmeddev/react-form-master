@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SimpleForm = () => {
+const SimpleForm = ({formTitle}) => {
 
     const handleOnSubmit = (e) => {
         e.preventDefault();
@@ -15,6 +15,8 @@ const SimpleForm = () => {
 
     return (
         <div >
+            <h2 className='text-2xl font-bold mt-10'>{formTitle}</h2>
+            {/* Simple form with controlled inputs */}
            <form onSubmit={handleOnSubmit}  className='flex flex-col gap-y-2'>
                 <input className='border px-2' type="text" name="name" placeholder='james cameron'/>
 

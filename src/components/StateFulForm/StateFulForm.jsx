@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const StateFulForm = () => {
+const StateFulForm = ({formTitle}) => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -36,6 +36,7 @@ const StateFulForm = () => {
 
     return (
         <div>
+            <h2 className='text-2xl font-bold mt-10'>{formTitle}</h2>
             <form onSubmit={handleOnSubmit}  className='flex flex-col gap-y-2'>
                 <input onChange={handleNameChange} className='border px-2' type="text" name="name" placeholder='james cameron' required/>
 

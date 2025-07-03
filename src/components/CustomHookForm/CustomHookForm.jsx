@@ -1,6 +1,6 @@
 import useInputState from '../../assets/hooks/useInputState';
 
-const CustomHookForm = () => {
+const CustomHookForm = ({formTitle}) => {
     const nameInput = useInputState('');
     const emailInput = useInputState('');
     const passwordInput = useInputState('');
@@ -14,6 +14,7 @@ const CustomHookForm = () => {
         }
     return (
         <div>
+            <h2 className='text-2xl font-bold mt-10'>{formTitle}</h2>
                <form onSubmit={handleOnSubmit}  className='flex flex-col gap-y-2'>
                 <input {...nameInput}  className='border px-2' type="text" name="name" placeholder='james cameron' required/>
 

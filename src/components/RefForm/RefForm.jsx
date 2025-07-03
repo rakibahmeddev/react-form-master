@@ -20,6 +20,7 @@ const RefForm = () => {
 
     return (
         <div>
+             <h2 className='text-2xl font-bold mt-10'>Reff Form</h2>
               <form onSubmit={handleOnSubmit}  className='flex flex-col gap-y-2'>
                 <input ref={nameRef} className='border px-2' type="text" name="name" placeholder='james cameron' required/>
 

@@ -1,12 +1,51 @@
-# React + Vite
+# React Learning Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a **learning project** where I practiced building a React application with various advanced concepts and tools.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live Demo
 
-## Expanding the ESLint configuration
+You can check the live version of this project here:  
+👉 [https://impossible-cloud.surge.sh](https://impossible-cloud.surge.sh)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Technologies Used
+
+- **React** – Core JavaScript library for building UI
+- **Tailwind CSS** – Utility-first CSS framework for styling
+- **React Hooks**  
+  - `useState` for state management  
+  - Custom hooks for reusable logic  
+- Handling **browser events**  
+- Building **reusable forms** with form validation  
+- Managing data flow with **prop drilling** and **Context API**
+
+---
+
+## Features Practiced
+
+- Different types of form usage (controlled inputs, reusable components)  
+- State management with hooks  
+- Sharing state globally using Context API  
+- Creating custom hooks for cleaner, reusable code  
+- Handling browser events (like window resize, scroll, etc.)  
+- Passing data via props (prop drilling)  
+- Styling with Tailwind CSS for responsive design
+
+---
+
+## How to Run Locally
+
+1. Clone the repo  
+2. Run `npm install` to install dependencies  
+3. Run `npm run dev` to start the development server
+
+---
+
+Feel free to explore the code and reach out if you want to discuss or learn together!
+
+---
+
+**Happy Coding!** 🚀

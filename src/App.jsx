@@ -10,30 +10,24 @@ import StateFulForm from './components/StateFulForm/StateFulForm'
 function App() {
 
 
-    // const handleSignUpSubmit = (data) => {
-    //   console.log('Sign Up Data:', data);
-    // }
-    // const handleProfileUpdateSubmit = (data) => {
-    //   console.log('Profile Update Data:', data);
-    // }
+    const handleSignUpSubmit = (data) => {
+      console.log('Sign Up Data:', data);
+    }
+    const handleProfileUpdateSubmit = (data) => {
+      console.log('Profile Update Data:', data);
+    }
 
 
   return (
     <div className='max-w-full w-full flex flex-col items-center'>
       <h1 className='text-4xl font-bold my-10'>Welcome to React Form Learning</h1>
-      {/* <SimpleForm></SimpleForm> */}
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full px-10'>
+          <SimpleForm formTitle={'Simple Form'}></SimpleForm>
+          <StateFulForm formTitle={'Stateful Form'}></StateFulForm>
+          <RefForm></RefForm>
+          <CustomHookForm formTitle={'Custom Hook Form'}></CustomHookForm>
 
-      {/* <h2 className='text-2xl font-bold mt-10'>Stateful Form</h2> */}
-      {/* <StateFulForm></StateFulForm> */}
-
-      {/* <h2 className='text-2xl font-bold mt-10'>Reff Form</h2> */}
-      {/* <RefForm></RefForm> */}
-     
-    {/* <h2 className='text-2xl font-bold mt-10'>Custom Hook Form</h2> */}
-    {/* <CustomHookForm></CustomHookForm> */}
-
-
-    {/* <ReusableForm 
+            <ReusableForm 
     formTitle="Singn Up Form"
      submitBtnText="Sign Up" handleOnSubmit={handleSignUpSubmit}>
       <p className='text-center'>Please sign up from react default children props</p>
@@ -43,7 +37,11 @@ function App() {
     formTitle="Profile Update Form"
      submitBtnText='Update' handleOnSubmit={handleProfileUpdateSubmit}>
       <p className="text-center">Keep your profile always updated</p>
-     </ReusableForm> */}
+     </ReusableForm>
+      </div>
+
+
+  
 
 
      <Grandpa></Grandpa>

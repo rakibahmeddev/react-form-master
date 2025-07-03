@@ -15,7 +15,7 @@ const Grandpa = () => {
             <h3 className='text-center mb-3'>Net Money: {money}</h3>
             <MoneyContext.Provider value={[money, setMoney]}>
                 <AssetContext.Provider value={'gold'}>
-                <div className='flex gap-6'>
+                <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6 w-full'>
                     <Dad asset={asset}></Dad>
                     <Uncle asset={asset}></Uncle>
                     <Aunty></Aunty>
